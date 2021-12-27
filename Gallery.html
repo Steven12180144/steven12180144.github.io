@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana;
+  padding: 10px;
+  background: #FFC300;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #DAF7A6;
+}
+
+.header h1 {
+  font-size: 30px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #F12C00;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 100%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-image: url (c:\user\ASUS\Desktop\Web Design\Project HTML\Home\foto1.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #DAF7A6;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #DAF7A6;
+  margin-top: 20px;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>In Me</h1>
+  <p>Website Ini Berisi Tentang Saya</p>
+</div>
+
+<<div class="topnav">
+  <a href="Home.html">Home</a>
+  <a href="About Us.html">About Us</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="Contact Us.html" style="float:right">Contact Us</a>
+</div>
+
+<div class="row">
+    <div class="card">
+      <h2>Hasil Karya Foto</h2>
+      <h4>Foto - foto dibawah ini, merupakan hasil karya saya sendiri.</h4>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="F:\Project HTML\GALLERY\gallery1.jpg" alt="Corndog" width="600" height="400">
+    <div class="desc"> Foto ini diambil di Gedung Merah yang berada di Kota tua</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="F:\Project HTML\GALLERY\gallery2.jpg" alt="Odeng Suki" width="600" height="400">
+    <div class="desc">Foto ini diambil dipasar petak 9, saat imlek tahun 2019</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="F:\Project HTML\GALLERY\gallery3.jpg" alt="Spicy Tteobokki" width="400" height="200">
+    <div class="desc">Foto ini diambil diGedung kosong yang berada di Glodok</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="F:\Project HTML\GALLERY\gallery4.jpg" alt="BunggeOppang" width="100" height="100">
+    <div class="desc">Foto ini diambil saat beli kue rangi dipasar Glodok</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p>Semua gambar diatas, merupakan gambar yang saya ambil saat saya hunting foto</p>
+</div>
+  
+</div>
+
+<div class="footer">
+ <div class="footer">
+  <p>12180144 - Steven<br>
+  <a href="mailto:steven.steve13@gmail.com">steven.steve13@gmail.com</a></p>
+  <a href="https://instagram.com"><img src="F:\Project HTML\footer\IG.png" width="120" height="60"></a>
+  <a href="https://facebook.com"><img src="F:\Project HTML\footer\FB.png" width="120" height="60"></a>
+</div>
+
+</body>
+</html>
